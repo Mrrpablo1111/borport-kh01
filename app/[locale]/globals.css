@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Forum&family=Outfit:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* globals.css */
+:root {
+  --font-inter: "Inter", sans-serif;
+  --font-forum: "Forum", sans-serif;
+}
+
+body {
+  font-family: var(--font-inter);
+}
+
+/* Apply Forum font to specific elements if needed */
+.forum-font {
+  font-family: var(--font-forum);
+}
+
+:root {
+  --dark-green: #112a34;
+  --white-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.blur-background-filter {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.container {
+  padding-left: 50%;
+}
+.body-font {
+  font-family: "Forum";
+  font-size: 12px;
+}
+.forum-regular {
+  font-family: "Forum";
+  font-weight: 400;
+  font-style: normal;
+}
+.content {
+  width: 100%;
+  height: calc(100% - 65px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translate(0px);
+}
+.content h5 {
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.content h1 {
+  font-size: 2rem;
+  max-width: 50rem;
+  color: var(--white-color);
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.content p {
+  color: #eee;
+  font-weight: 300;
+  max-width: 40rem;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
